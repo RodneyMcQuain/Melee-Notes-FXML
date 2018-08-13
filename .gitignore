@@ -1,6 +1,9 @@
 # Bin
 bin/
 
+# Settings
+.settings/
+
 # Project
 *.project
 
@@ -30,3 +33,4 @@ hs_err_pid*
 
 # Misc.
 *.db
+build.fxbuild
