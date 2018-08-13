@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="490.0" prefWidth="566.0" stylesheets="@../assets/stylesheets/darkStylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddTournamentController">
+   <top>
+      <VBox prefHeight="61.0" prefWidth="546.0" BorderPane.alignment="CENTER">
+         <fx:include source="header.fxml"/>
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="69.0" prefWidth="546.0" text="Add Tournament">
+               <font>
+                  <Font name="Verdana Bold" size="36.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <GridPane prefHeight="372.0" prefWidth="481.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="116.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="169.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="241.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="74.0" minHeight="4.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="4.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Tournament Name:">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Label>
+            <Label text="City:" GridPane.rowIndex="4" />
+            <Label text="My Placing:" GridPane.rowIndex="2" />
+            <Label text="State:" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dpDate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Date:" GridPane.rowIndex="1" />
+            <Label text="Notes:" GridPane.rowIndex="5" />
+            <TextField fx:id="tfTournamentName" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfMyPlacing" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfState" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfCity" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextArea fx:id="taNotes" prefHeight="172.0" prefWidth="417.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets top="5.0" />
+               </GridPane.margin></TextArea>
+            <Button fx:id="btAddTournament" mnemonicParsing="false" onAction="#onClick_btAddTournament" text="Add Tournament" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin></Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

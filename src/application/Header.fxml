@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="162.0" stylesheets="@../assets/stylesheets/darkStylesheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HeaderController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="63.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="99.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="25.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="btBack" mnemonicParsing="false" onAction="#onClick_btBack" text="Back" />
+      <Button fx:id="btMainMenu" mnemonicParsing="false" onAction="#onClick_btMainMenu" text="Main Menu" GridPane.columnIndex="1" />
+   </children>
+</GridPane>
